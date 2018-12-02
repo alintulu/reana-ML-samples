@@ -4,7 +4,7 @@ Tracker hits are low-level information that are used to reconstruct tracks and a
 
 ## Categories of the tree
 
-  - *hit_** are variables refering to the reconstructed hits in the tracker. E.g. position, position error, sub detector and *an attempt to** associate the reconstructed hit to a generator level particle, simulated track, or a generated jet
+  - *hit_** are variables refering to the reconstructed hits in the tracker. E.g. position, position error, sub detector and *an attempt to* associate the reconstructed hit to a generator level particle, simulated track, or a generated jet
   - *simtrack_** are variables associated to the simulated tracks. They are used as an intermediate step to associate a reconstrcuted hit to a generated particle.
   - *genpart_** are variables linked to generator level particles
   - *genjets_** are variables refering to jets clustered with generated particles
@@ -14,11 +14,11 @@ Tracker hits are low-level information that are used to reconstruct tracks and a
 ## Workflow
 
 ```
-        +---------+
-        | GEN-SIM |       
-        +---------+
-             |
-             v
+       +---------+
+       | GEN-SIM |       
+       +---------+
+            |
+            v
   +----------------------+
   | DIGI,L1,DIGI2RAW,HLT |     In addition to standard, add Pixel and SiStrip sim digis
   +----------------------+     needed for RecHit <—> SimTrack matching
