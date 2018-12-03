@@ -21,7 +21,7 @@ Tracker hits are low-level information that are used to reconstruct tracks and a
             v
   +----------------------+
   | DIGI,L1,DIGI2RAW,HLT |     In addition to standard, add Pixel and SiStrip sim digis
-  +----------------------+     needed for RecHit <—> SimTrack matching
+  +----------------------+     needed for RecHit <=> SimTrack matching
             |
             v
   +----------------------+
@@ -30,7 +30,7 @@ Tracker hits are low-level information that are used to reconstruct tracks and a
             |                  TrackExtra for generalTracks, and tracker digis
             v
       +------------+
-      | ntupalizer |           Save rechits with truth information
+      | ntupalizer |           Save RecHits with truth information
       +------------+
  ```
  **step0**
